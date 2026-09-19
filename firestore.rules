@@ -1,0 +1,10 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /applications/{applicationId} {
+      allow create: if request.resource.data.applicationId == applicationId;
+      allow read: if request.auth != null;
+      allow update, delete: if false;
+    }
+  }
+}

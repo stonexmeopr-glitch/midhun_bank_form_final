@@ -1,0 +1,6 @@
+{
+  "name": "Proposed Banking Agents Trade Union - Membership Application",
+  "description": "Official digital membership application form with auto PIN code lookup, PDF format generation, digital signature capture, and submission handling for Proposed Banking Agents Trade Union.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

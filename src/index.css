@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+:root {
+  --color-accent: #8B9A6E;
+  --color-accent-hover: #78875c;
+  --color-accent-active: #66744d;
+  --color-accent-light: #f3f6ee;
+  --color-accent-border: #c4d0b2;
+}
+
+.btn-accent {
+  background-color: #8B9A6E;
+  color: #ffffff;
+  transition: all 0.15s ease-in-out;
+}
+.btn-accent:hover {
+  background-color: #78875c;
+}
+.btn-accent:active {
+  background-color: #66744d;
+}
+
+@media print {
+  body {
+    background-color: #ffffff !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  
+  .print\:hidden {
+    display: none !important;
+  }
+}

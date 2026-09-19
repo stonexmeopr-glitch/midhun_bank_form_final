@@ -1,0 +1,38 @@
+{
+  "entities": {
+    "Application": {
+      "title": "Application",
+      "description": "Submitted membership application record",
+      "type": "object",
+      "properties": {
+        "applicationId": { "type": "string" },
+        "name": { "type": "string" },
+        "fatherName": { "type": "string" },
+        "gender": { "type": "string" },
+        "dob": { "type": "string" },
+        "age": { "type": "string" },
+        "pincode": { "type": "string" },
+        "state": { "type": "string" },
+        "district": { "type": "string" },
+        "postal": { "type": "string" },
+        "address": { "type": "string" },
+        "qualification": { "type": "string" },
+        "mobileNo": { "type": "string" },
+        "email": { "type": "string" },
+        "bankName": { "type": "string" },
+        "corporateBcName": { "type": "string" },
+        "place": { "type": "string" },
+        "date": { "type": "string" },
+        "submittedAt": { "type": "string" },
+        "status": { "type": "string" }
+      },
+      "required": ["applicationId", "name", "email"]
+    }
+  },
+  "firestore": {
+    "/applications/{applicationId}": {
+      "schema": "Application",
+      "description": "Collection of all submitted trade union membership applications"
+    }
+  }
+}
